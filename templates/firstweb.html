@@ -1,0 +1,17 @@
+{% extends 'bast.html' %}
+{% load static %}
+{% block content %}
+    <div class="text-danger"><h1>This is My Semple Web</h1></div>
+
+    <h2>Welcome to Digital Business Technology Program</h2>
+
+    <img src="{% static 'images/321732040_1239530783442598_5937468290736081010_n.jpg' %}"width="400" height="200"
+        class="rounded"> <br><br>
+    <img src="{% static 'images/321732040_1239530783442598_5937468290736081010_n.jpg' %}"width="400" height="200"
+        class="rounded">
+    <br><br>
+    <a href="{% url 'secondpage' %}" class="btn btn-sm btn-primary">Go To Second Page</a>
+    <a href="{% url 'thirdpage' %}" class="btn btn-sm btn-success">Go To Third Page</a>
+    <a href="/ " class="btn btn-sm btn-primary">Go To Home</a><br>
+    <br><br><br><br>
+{% endblock %}
